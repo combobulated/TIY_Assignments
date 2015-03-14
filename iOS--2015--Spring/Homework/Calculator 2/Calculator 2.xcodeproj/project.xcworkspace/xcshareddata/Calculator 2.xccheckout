@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1D32C07D-DD8B-4D4C-86A9-13769CE1B522</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Calculator 2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>54927E67000E837E7F17410909920C7344153C2B</key>
+		<string>https://www.github.com/combobulated/TIY_Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS--2015--Spring/Homework/Calculator 2/Calculator 2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>54927E67000E837E7F17410909920C7344153C2B</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://www.github.com/combobulated/TIY_Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>54927E67000E837E7F17410909920C7344153C2B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>54927E67000E837E7F17410909920C7344153C2B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TIY_Assignments</string>
+		</dict>
+	</array>
+</dict>
+</plist>

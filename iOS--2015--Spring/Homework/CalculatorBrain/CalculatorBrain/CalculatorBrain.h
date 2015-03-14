@@ -12,7 +12,7 @@
 
 typedef enum
 {
-    OperatorTypeNone,
+    OperatorTypeNone,     // first operand in edited
     OperatorTypeAddition,
     OperatorTypeSubtraction,
     OperatorTypeMultiplication,
@@ -25,25 +25,42 @@ typedef enum
 @interface CalculatorBrain : NSObject
 
 
-
-@property (strong, nonatomic) NSMutableString *operand1String;
+//inputs
+@property (strong, nonatomic) NSMutableString *operand1String; // inputs in MSMutableString format
 @property (strong, nonatomic) NSMutableString *operand2String;
-@property (strong, nonatomic) NSString *resultString;
 
 
+//outputs
+@property (strong, nonatomic) NSString *resultString;          // output in NSString format
+
+
+// access to floats internal useage, just in case...
 @property (assign) float operand1;
 @property (assign) float operand2;
 @property (assign) float result;
+
+
+//Enums indicating which operator has been pressed
+// set these before calling completeEquate when equals
+// button is pressed.
 @property (assign) OperatorType operatorType;
+
+
+// not used
 @property (assign) BOOL userIsTypingANumber;
 
+
+// when equal sign is pressed call this method
 - (void) completeEquate;
 
-//- (void) plusMinusOperand:(BOOL)firstOperandSelected;
+// single operand functions.
+// (note these methods do not work on
+// the calculated result, only the operands.)
 - (void) plusMinusOperand;
 - (void) percentOperand;
 
-//- (void) subtractOperands;
+// stuff for future reference examples
+//- (void) plusMinusOperand:(BOOL)firstOperandSelected;
 
 
 @end

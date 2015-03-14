@@ -7,15 +7,34 @@
 //
 
 #import "TicketsTableViewController.h"
-
+#import "Ticket.h"
 @interface TicketsTableViewController ()
+
+{
+    
+    //  an array of tickets
+    // each ticket having 6 computer generated numbers
+    
+    NSMutableArray *ticketPack;
+}
+
+@property(weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+
+- (IBAction)createTicket:(id)sender;
+// (next hook up button to this code)
 
 @end
 
 @implementation TicketsTableViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+      // init the ticket pack array
+    
+      ticketPack = [[ NSMutableArray alloc] init];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -24,34 +43,54 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
     // Return the number of rows in the section.
-    return 0;
+    return [ticketPack count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+// cell builder method
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TicketCell" forIndexPath:indexPath];
+   
     
     // Configure the cell...
     
+    
+    Ticket *aTicket = ticketPack[indexPath.row];
+    cell.textLabel.text = [aTicket description];
+    
+    cell.detailTextLabel.text = @"";  // add text in detail field of cell. ..for cash total
+   
+    
+    
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -96,5 +135,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+#pragma mark -Action Handlers
+
+- (IBAction)createTicket:(id)sender
+
+{
+    Ticket *aTicket = [Ticket ticketUsingQuickPick];
+    [ticketPack addObject:aTicket];
+    [self.tableView reloadData];
+}
+
 
 @end

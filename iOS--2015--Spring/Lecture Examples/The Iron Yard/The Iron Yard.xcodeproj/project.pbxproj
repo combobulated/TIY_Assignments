@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		38620D131AA74F07009BC8C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620D121AA74F07009BC8C4 /* main.m */; };
+		38620D1B1AA75167009BC8C4 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620D1A1AA75167009BC8C4 /* Car.m */; };
+		38C1AD5C1AB07E0500ABBA7B /* Car+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C1AD5B1AB07E0500ABBA7B /* Car+Extras.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		38620D0F1AA74F07009BC8C4 /* The Iron Yard */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Iron Yard"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38620D121AA74F07009BC8C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38620D191AA75167009BC8C4 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		38620D1A1AA75167009BC8C4 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		38C1AD5A1AB07E0500ABBA7B /* Car+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Extras.h"; sourceTree = "<group>"; };
+		38C1AD5B1AB07E0500ABBA7B /* Car+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Extras.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				38620D121AA74F07009BC8C4 /* main.m */,
+				38C1AD5A1AB07E0500ABBA7B /* Car+Extras.h */,
+				38C1AD5B1AB07E0500ABBA7B /* Car+Extras.m */,
+				38620D191AA75167009BC8C4 /* Car.h */,
+				38620D1A1AA75167009BC8C4 /* Car.m */,
 			);
 			path = "The Iron Yard";
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38620D1B1AA75167009BC8C4 /* Car.m in Sources */,
 				38620D131AA74F07009BC8C4 /* main.m in Sources */,
+				38C1AD5C1AB07E0500ABBA7B /* Car+Extras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +244,7 @@
 				38620D181AA74F07009BC8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

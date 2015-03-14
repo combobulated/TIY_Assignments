@@ -10,4 +10,13 @@
 
 @interface Ticket : NSObject
 
+
++ (instancetype)ticketUsingQuickPick;
+//+ (instancetype)init;
+
+// add boolean called winner  ie ticket.winner
+// to ask if ticket.winner is a win (yes) or (no)
+
+
+
 @end

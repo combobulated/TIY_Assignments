@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QuK-L7-S0F">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,106 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VdG-3x-8cx">
+                                <rect key="frame" x="60" y="72" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYO-dz-0XB">
+                                <rect key="frame" x="60" y="112" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71d-xT-JpV">
+                                <rect key="frame" x="60" y="152" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7D4-UI-fmb">
+                                <rect key="frame" x="388" y="152" width="48" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-g3-zL3">
+                                <rect key="frame" x="444" y="152" width="96" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YGX-Mb-ZUv">
+                                <rect key="frame" x="60" y="192" width="144" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VdG-3x-8cx" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.8" id="5mx-YR-nA7"/>
+                            <constraint firstItem="71d-xT-JpV" firstAttribute="leading" secondItem="YGX-Mb-ZUv" secondAttribute="leading" id="Cnq-hr-IHr"/>
+                            <constraint firstAttribute="centerX" secondItem="VdG-3x-8cx" secondAttribute="centerX" id="E4n-eu-PXo"/>
+                            <constraint firstItem="71d-xT-JpV" firstAttribute="leading" secondItem="tYO-dz-0XB" secondAttribute="leading" id="F2f-xZ-CnG"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="centerX" secondItem="VdG-3x-8cx" secondAttribute="centerX" id="Gkj-Fo-o9Q"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="trailing" secondItem="TXh-g3-zL3" secondAttribute="trailing" id="GyB-bU-fLW"/>
+                            <constraint firstItem="TXh-g3-zL3" firstAttribute="width" secondItem="7D4-UI-fmb" secondAttribute="width" multiplier="2" id="HqZ-mG-cgI"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="width" secondItem="VdG-3x-8cx" secondAttribute="width" id="KL0-7L-XWm"/>
+                            <constraint firstItem="71d-xT-JpV" firstAttribute="height" secondItem="YGX-Mb-ZUv" secondAttribute="height" id="Lut-M0-qL0"/>
+                            <constraint firstItem="TXh-g3-zL3" firstAttribute="top" secondItem="tYO-dz-0XB" secondAttribute="bottom" constant="10" id="MEP-Xb-ICJ"/>
+                            <constraint firstItem="7D4-UI-fmb" firstAttribute="top" secondItem="tYO-dz-0XB" secondAttribute="bottom" constant="10" id="NDX-gK-nMv"/>
+                            <constraint firstItem="71d-xT-JpV" firstAttribute="top" secondItem="tYO-dz-0XB" secondAttribute="bottom" constant="10" id="OkJ-BR-ep3"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="height" secondItem="VdG-3x-8cx" secondAttribute="height" id="OqF-vf-hgK"/>
+                            <constraint firstItem="YGX-Mb-ZUv" firstAttribute="width" secondItem="71d-xT-JpV" secondAttribute="width" multiplier="0.5" id="UIa-h8-SXx"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="top" secondItem="VdG-3x-8cx" secondAttribute="bottom" constant="10" id="UhE-6a-ddR"/>
+                            <constraint firstItem="VdG-3x-8cx" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.8" id="V4e-du-ene"/>
+                            <constraint firstItem="VdG-3x-8cx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="aG6-I7-f3s"/>
+                            <constraint firstItem="7D4-UI-fmb" firstAttribute="height" secondItem="tYO-dz-0XB" secondAttribute="height" id="aW5-R4-wXr"/>
+                            <constraint firstItem="71d-xT-JpV" firstAttribute="width" secondItem="tYO-dz-0XB" secondAttribute="width" multiplier="0.6" id="bvG-te-JcR"/>
+                            <constraint firstItem="7D4-UI-fmb" firstAttribute="width" secondItem="tYO-dz-0XB" secondAttribute="width" multiplier="0.1" id="i1P-N0-9nT"/>
+                            <constraint firstItem="YGX-Mb-ZUv" firstAttribute="top" secondItem="71d-xT-JpV" secondAttribute="bottom" constant="10" id="kU9-6v-czq"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="width" secondItem="VdG-3x-8cx" secondAttribute="width" id="kZM-97-N8q"/>
+                            <constraint firstItem="7D4-UI-fmb" firstAttribute="leading" secondItem="71d-xT-JpV" secondAttribute="trailing" constant="40" id="oz5-8B-F6I"/>
+                            <constraint firstItem="tYO-dz-0XB" firstAttribute="height" secondItem="TXh-g3-zL3" secondAttribute="height" id="pKr-OU-BjD"/>
+                            <constraint firstItem="VdG-3x-8cx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="tjy-6q-mWK"/>
+                            <constraint firstItem="VdG-3x-8cx" firstAttribute="width" secondItem="tYO-dz-0XB" secondAttribute="width" id="tpE-1O-Yto"/>
+                            <constraint firstItem="71d-xT-JpV" firstAttribute="height" secondItem="tYO-dz-0XB" secondAttribute="height" id="z23-Wm-suQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5mx-YR-nA7"/>
+                                <exclude reference="KL0-7L-XWm"/>
+                                <exclude reference="kZM-97-N8q"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="2Qr-eN-jnv"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="tYO-dz-0XB" id="2tF-pf-e8R"/>
+                        <outlet property="nameTextField" destination="VdG-3x-8cx" id="BVu-wg-OUE"/>
+                        <outlet property="phoneNumberTextField" destination="YGX-Mb-ZUv" id="oFJ-EL-WF2"/>
+                        <outlet property="stateTextField" destination="7D4-UI-fmb" id="GV4-KA-Ux6"/>
+                        <outlet property="zipCodeTextField" destination="TXh-g3-zL3" id="f6H-He-EoS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1211" y="953"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BG2-j5-T6d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QuK-L7-S0F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wb5-fc-He9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="50r-GH-WwO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyl-a7-awK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="1039"/>
         </scene>
     </scenes>
 </document>

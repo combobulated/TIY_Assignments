@@ -14,6 +14,7 @@
 		38620D6E1AAE32A7009BC8C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38620D6D1AAE32A7009BC8C4 /* Images.xcassets */; };
 		38620D711AAE32A7009BC8C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38620D6F1AAE32A7009BC8C4 /* LaunchScreen.xib */; };
 		38620D7D1AAE32A7009BC8C4 /* Form_ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620D7C1AAE32A7009BC8C4 /* Form_ValidatorTests.m */; };
+		38C1AD331AAE802000ABBA7B /* TexFieldFormatInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C1AD321AAE802000ABBA7B /* TexFieldFormatInspector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		38620D761AAE32A7009BC8C4 /* Form ValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Form ValidatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38620D7B1AAE32A7009BC8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38620D7C1AAE32A7009BC8C4 /* Form_ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Form_ValidatorTests.m; sourceTree = "<group>"; };
+		38C1AD311AAE802000ABBA7B /* TexFieldFormatInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexFieldFormatInspector.h; sourceTree = "<group>"; };
+		38C1AD321AAE802000ABBA7B /* TexFieldFormatInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TexFieldFormatInspector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				38620D6D1AAE32A7009BC8C4 /* Images.xcassets */,
 				38620D6F1AAE32A7009BC8C4 /* LaunchScreen.xib */,
 				38620D601AAE32A7009BC8C4 /* Supporting Files */,
+				38C1AD311AAE802000ABBA7B /* TexFieldFormatInspector.h */,
+				38C1AD321AAE802000ABBA7B /* TexFieldFormatInspector.m */,
 			);
 			path = "Form Validator";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38620D691AAE32A7009BC8C4 /* ViewController.m in Sources */,
+				38C1AD331AAE802000ABBA7B /* TexFieldFormatInspector.m in Sources */,
 				38620D661AAE32A7009BC8C4 /* AppDelegate.m in Sources */,
 				38620D631AAE32A7009BC8C4 /* main.m in Sources */,
 			);
@@ -412,6 +418,7 @@
 				38620D821AAE32A7009BC8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38620D831AAE32A7009BC8C4 /* Build configuration list for PBXNativeTarget "Form ValidatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				38620D851AAE32A7009BC8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

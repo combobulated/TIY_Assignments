@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		38620CDD1AA6250D009BC8C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620CDC1AA6250D009BC8C4 /* main.m */; };
 		38620CE01AA6250D009BC8C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620CDF1AA6250D009BC8C4 /* AppDelegate.m */; };
-		38620CE31AA6250D009BC8C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620CE21AA6250D009BC8C4 /* ViewController.m */; };
 		38620CE61AA6250D009BC8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38620CE41AA6250D009BC8C4 /* Main.storyboard */; };
 		38620CE81AA6250D009BC8C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38620CE71AA6250D009BC8C4 /* Images.xcassets */; };
 		38620CEB1AA6250D009BC8C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38620CE91AA6250D009BC8C4 /* LaunchScreen.xib */; };
 		38620CF71AA6250D009BC8C4 /* JackpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620CF61AA6250D009BC8C4 /* JackpotTests.m */; };
+		38620D021AA62AB1009BC8C4 /* TicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620D011AA62AB1009BC8C4 /* TicketsTableViewController.m */; };
+		38620D051AA6461B009BC8C4 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620D041AA6461B009BC8C4 /* Ticket.m */; };
+		38620D1E1AA794DE009BC8C4 /* WinningTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620D1D1AA794DE009BC8C4 /* WinningTicketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		38620CDC1AA6250D009BC8C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38620CDE1AA6250D009BC8C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38620CDF1AA6250D009BC8C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		38620CE11AA6250D009BC8C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		38620CE21AA6250D009BC8C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		38620CE51AA6250D009BC8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38620CE71AA6250D009BC8C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38620CEA1AA6250D009BC8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		38620CF01AA6250D009BC8C4 /* JackpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38620CF51AA6250D009BC8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38620CF61AA6250D009BC8C4 /* JackpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JackpotTests.m; sourceTree = "<group>"; };
+		38620D001AA62AB1009BC8C4 /* TicketsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketsTableViewController.h; path = ../TicketsTableViewController.h; sourceTree = "<group>"; };
+		38620D011AA62AB1009BC8C4 /* TicketsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketsTableViewController.m; path = ../TicketsTableViewController.m; sourceTree = "<group>"; };
+		38620D031AA6461B009BC8C4 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		38620D041AA6461B009BC8C4 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		38620D1C1AA794DE009BC8C4 /* WinningTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningTicketViewController.h; sourceTree = "<group>"; };
+		38620D1D1AA794DE009BC8C4 /* WinningTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningTicketViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +89,16 @@
 			children = (
 				38620CDE1AA6250D009BC8C4 /* AppDelegate.h */,
 				38620CDF1AA6250D009BC8C4 /* AppDelegate.m */,
-				38620CE11AA6250D009BC8C4 /* ViewController.h */,
-				38620CE21AA6250D009BC8C4 /* ViewController.m */,
+				38620D001AA62AB1009BC8C4 /* TicketsTableViewController.h */,
+				38620D011AA62AB1009BC8C4 /* TicketsTableViewController.m */,
 				38620CE41AA6250D009BC8C4 /* Main.storyboard */,
 				38620CE71AA6250D009BC8C4 /* Images.xcassets */,
 				38620CE91AA6250D009BC8C4 /* LaunchScreen.xib */,
 				38620CDA1AA6250D009BC8C4 /* Supporting Files */,
+				38620D031AA6461B009BC8C4 /* Ticket.h */,
+				38620D041AA6461B009BC8C4 /* Ticket.m */,
+				38620D1C1AA794DE009BC8C4 /* WinningTicketViewController.h */,
+				38620D1D1AA794DE009BC8C4 /* WinningTicketViewController.m */,
 			);
 			path = Jackpot;
 			sourceTree = "<group>";
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38620CE31AA6250D009BC8C4 /* ViewController.m in Sources */,
+				38620D1E1AA794DE009BC8C4 /* WinningTicketViewController.m in Sources */,
 				38620CE01AA6250D009BC8C4 /* AppDelegate.m in Sources */,
 				38620CDD1AA6250D009BC8C4 /* main.m in Sources */,
+				38620D021AA62AB1009BC8C4 /* TicketsTableViewController.m in Sources */,
+				38620D051AA6461B009BC8C4 /* Ticket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
