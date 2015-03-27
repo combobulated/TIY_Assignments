@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rmk-T0-I8F">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--MapViewController-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="MapViewController" id="vXZ-lx-hvc" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkP-iO-t23">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="Cmq-bf-Kju"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cmq-bf-Kju"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rkP-iO-t23" secondAttribute="trailing" id="4sP-jS-4mI"/>
+                            <constraint firstItem="rkP-iO-t23" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="BYq-rZ-21D"/>
+                            <constraint firstItem="rkP-iO-t23" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="XZ8-Gq-aAt"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rkP-iO-t23" secondAttribute="bottom" id="Xiz-Bs-xqt"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vqS-Qi-SFB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="tBm-bm-kDf">
+                            <connections>
+                                <action selector="deletePin:" destination="vXZ-lx-hvc" id="XkW-cd-QpJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Mark Location" id="nOr-G5-zvo">
+                            <connections>
+                                <action selector="markLocationOfCar:" destination="vXZ-lx-hvc" id="qmW-51-F5r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="aButton" destination="nOr-G5-zvo" id="Lxl-jj-zZN"/>
+                        <outlet property="aDeleteButton" destination="tBm-bm-kDf" id="DsW-SP-8bP"/>
+                        <outlet property="mapView" destination="rkP-iO-t23" id="JSF-sB-my9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="1028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gxg-Ms-51l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rmk-T0-I8F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F2s-nH-Kp0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="MZq-2z-OQM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjT-LP-Rpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1039"/>
+        </scene>
+    </scenes>
+</document>

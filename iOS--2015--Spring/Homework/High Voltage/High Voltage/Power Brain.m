@@ -16,15 +16,14 @@
 // current in Amps
 // resistance in Ohms
 
-{
-    
-    float result;
-    
-}
 
 
 
 @implementation Power_Brain
+
+{
+    float result;
+}
 
 // OHMS
 // R = V/I
@@ -78,19 +77,16 @@
 //   parm 4 parm 3
 //
 
--(instancetype) init
+-(instancetype)initWithParameters:(NSMutableArray *)parameters;
+
 {
     self = [super init];
    
     if( self )
-        
     {
+        _allParameters = parameters;
        
-        _allParameters = [[NSMutableArray alloc]init];
-        _stringVolts = @"";
-        _stringAmps  = @"";
-        _stringOhms  = @"";
-        _stringWatts = @"";
+        _allParameters = [[ NSMutableArray alloc] init];
         
     }
     
@@ -117,10 +113,6 @@
     
 {
    // for ref, our 4 parameters defined in header
-//@property (strong, nonatomic)NSString *stringVolts;
-//@property (strong, nonatomic)NSString *stringAmps;
-//@property (strong, nonatomic)NSString *stringOhms;
-//@property (strong, nonatomic)NSString *stringWatts;
     
     float volts;
     float amps;
@@ -130,15 +122,15 @@
 
    // convert strings to floats
    
-   volts = [floatVal self.stringVolts ];
-   amps =  [floatVal self.stringAmps  ];
-   ohms =  [floatVal self.stringOhms  ];
-   watts = [floatVal self.stringWatts ];
+//   volts = [floatVal self.stringVolts ];
+////   amps =  [floatVal self.stringAmps  ];
+//   ohms =  [floatVal self.stringOhms  ];
+//   watts = [floatVal self.stringWatts ];
     
-   [ NSLog @"volts = %g", volts ];
-   [ NSLog @"amps  = %g", amps  ];
-   [ NSLog @"ohms  = %g", ohms  ];
-   [ NSLog @"watts = %g", watts ];
+    NSLog ( @"volts = %g", volts );
+    NSLog ( @"amps  = %g", amps  );
+    NSLog ( @"ohms  = %g", ohms  );
+    NSLog ( @"watts = %g", watts );
     
     
    // this is not what i want, but a start
@@ -160,12 +152,12 @@
 //              V=Square Root of ( P*R )
             
             result = 10.0;
-            self.stringVolts = stringWithFormat:@"%g",result;
+            [self.stringVolts appendString:[NSString stringWithFormat:@"%g",result]];
             rc = @"Volts";
             
             break;
             
-        case ParamterSelectedAmps:
+        case ParameterSelectedAmps:
             
             // AMPS
             
@@ -179,12 +171,12 @@
             //   I = Square Root of (P/R)
             
             result = 9.0;
-            self.stringAmps = stringWithFormat:@"%g",result;
+            [self.stringAmps appendString:[NSString stringWithFormat:@"%g",result]];
             rc = @"Amps";
             
             break;
             
-        case ParameterSelectedOhms;
+        case ParameterSelectedOhms:
             
             // OHMS
             //  if V and I true
@@ -198,13 +190,13 @@
             
             
             result = 8.0;
-            self.stringOhms = stringWithFormat:@"%g",result;
+            [self.stringOhms appendString:[NSString stringWithFormat:@"%g",result ]];
             
             rc = @"Ohms";
             
             break;
 
-        case ParameterSelectedWatts;
+        case ParameterSelectedWatts:
             
 //          WATTS
             
@@ -218,7 +210,7 @@
 //          P=I^2*R
             
             result = 7.0;
-            self.stringWatts = stringWithFormat:@"%g",result;
+            [self.stringWatts appendString:[NSString stringWithFormat:@"%g",result]];
             
             rc = @"Watts";
             

@@ -12,15 +12,16 @@
 #import "TodoItem.h"
 
 
-// note we add delegate for both textfield input and popoverpresentation
+// note we add two delegates, textfield input and popoverpresentation
 
 @interface TodoTableViewController ()  <UITextFieldDelegate,          UIPopoverPresentationControllerDelegate>
 
 
-     // our variables
 {
-    // task list items
-    NSMutableArray *taskList;
+    // our local instance variables
+    
+    NSMutableArray *taskList;  // the array of items in our list
+                               // note: item is defined in our model.
 }
 
 
@@ -28,9 +29,12 @@
 
 @end
 
+
 @implementation TodoTableViewController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     // initialize taskList
@@ -39,25 +43,30 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
     // Return the number of sections.
-//    return 0;
+    // return 0;
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView
+                       :(UITableView *)tableView numberOfRowsInSection
+                       :(NSInteger)section
+{
     
     // Return the number of rows in the section.
+    // Rows in our list coorespond to the taskList array.
     
-    // use our taskList array to determine number of rows
     return [taskList count];
 }
 
@@ -79,16 +88,20 @@
                                :(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskCell" forIndexPath:indexPath];
+   
     
-    // Configure the cell...a
+    // Configure the cell...
     
-    TodoItem *item = taskList[indexPath.row]; // one item in our task list
-                                              // item has a) task and b) a priority
+    TodoItem *item = taskList[indexPath.row]; // each item in our task list
+                                              // has a)task and b)a priority
     
     
     UITextField *textField = (UITextField *)[cell viewWithTag:1];  //task text field
-    UILabel *priorityLabel = (UILabel *) [cell viewWithTag:2];     //priority text field
-  
+    UILabel *priorityLabel = (UILabel *) [cell viewWithTag:2]; //priority text field
+ 
+    
+   // this class is assigned as delegate for the textField
+    
     textField.delegate = self;
     
     if (item)
@@ -177,10 +190,12 @@
 
 // here, i believe, we would populate the priority value in the TaskList
 
-//jim add missing code here...
-//{
-//return VIModalPresentationNone;
-//}
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
+{
+    return UIModalPresentationNone;
+}
+
+
 
 
 #pragma mark - UITextField delegate

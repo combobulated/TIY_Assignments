@@ -17,7 +17,7 @@ typedef enum
     ParameterSelectedAmps,
     ParameterSelectedOhms,
     ParameterSelectedWatts
-} GivenParameter;
+}GivenParameter;
 
 
 
@@ -25,8 +25,8 @@ typedef enum
 @interface Power_Brain : NSObject
 
 // parameters
-@property (strong, nonatomic)(NSMutableString *)stringVolts;
-@property (strong, nonatomic)(NSMutableString *)tringAmps;
+@property (strong, nonatomic)NSMutableString *stringVolts;
+@property (strong, nonatomic)NSMutableString *stringAmps;
 @property (strong, nonatomic)NSMutableString *stringOhms;
 @property (strong, nonatomic)NSMutableString *stringWatts;
 
@@ -36,7 +36,6 @@ typedef enum
 
 //  methods go here
 
-+ (NSArray *) allParameterTypes;  // returns a string of our parameter types
 
 - (BOOL) computeTwoAnswersAsString;   // sets  string values of calculated param
                                     // assumes two parameters are defined
