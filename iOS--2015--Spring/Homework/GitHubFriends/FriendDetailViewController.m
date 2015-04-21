@@ -53,6 +53,9 @@
    /*
     // Create an NSURLRequest object with the NSURL above.
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
+   
+    
+    // sync procedure to download json data from API of  a remote website.
     
     // Run a synchronous request with the request above and save
     // the response in an NSData object.
@@ -76,7 +79,7 @@
    */
    
     
-    // async
+    // async procedure... the prefered method to download json data
     
     NSURLSessionConfiguration *configuration =
     [NSURLSessionConfiguration defaultSessionConfiguration];

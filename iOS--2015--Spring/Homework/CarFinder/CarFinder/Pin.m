@@ -43,14 +43,12 @@
 
 - (NSString *)title
 {
-    // return the city name
     
     return @"Car Location";
 }
 
 - (NSString *)subtitle
 {
-    // return the temperature (in string format)
     
     return self.name;
 }
@@ -100,10 +98,18 @@
     
     return mapItem;
 }
+
+
 #pragma mark -NSCoding
 
-// the pounddefines use small k prefix
+// NSCoding allows the data to be bundeled and stored
+// in one "box" so to say.
+// This way, app maybe put to sleep when moved to background
+// then returned to normal state when brought to forground.
+// Key coding is used to store an retrieve the encoded data.
+// Note the pounddefines use a small k prefix
 // implying the value is a constant
+
 #define kNamekey      @"name"
 #define kLatitudeKey  @"latitude"
 #define kLongitudeKey @"longitude"

@@ -81,9 +81,10 @@
     
    // fetch current location
    
-   // create new pin and drop ita
+   // create new pin and drop it
     
     if (!self.pin) {
+        
         // display the pin name on the map marker
         // note: addAnnotation accepts any obect
         // that implements the MkAnnotation protocol
@@ -98,6 +99,7 @@
             [self configureLocationManager];
        // }
     }
+    
     [self.mapView addAnnotation:self.pin];
 }
 
@@ -127,7 +129,7 @@
     // but first lets pull in current user location
     //-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
     
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance( [ self.pin coordinate] , MAP_DISPLAY_SCALE, MAP_DISPLAY_SCALE);
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance( [ self.pin coordinate], MAP_DISPLAY_SCALE, MAP_DISPLAY_SCALE);
     
     // and set it
     [self.mapView setRegion:viewRegion];
@@ -234,10 +236,12 @@
         }
         
     }
+    
     else
-    {   // turn off
-        [self.aButton setEnabled:NO];
         
+    {
+        // turn off
+        [self.aButton setEnabled:NO];
     }
 }
 
@@ -281,11 +285,13 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    // initialize the pin model with coordinates users
+    // initialize the pin model with coordinates of user's
     // current location.
+    
     [self enableLocationManager:NO];
     
     CLLocation *location = [locations lastObject];
+    
     double lat = location.coordinate.latitude;
     double lng = location.coordinate.longitude;
   
@@ -330,6 +336,8 @@
     }
  */
 }
+
+//----
 
 #pragma mark    --backup and restore from background routines
 //add data Step C

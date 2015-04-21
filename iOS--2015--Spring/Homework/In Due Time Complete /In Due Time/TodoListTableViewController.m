@@ -66,8 +66,8 @@
     
     TodoItem *todoItem = todoItems[indexPath.row];
     
-     UITextField *textField = (UITextField *)[cell viewWithTag:1];
-      UIButton *checkboxButton = (UIButton *)[cell viewWithTag:2];
+     UITextField *textField = (UITextField *)[cell viewWithTag:1]; //description text field
+      UIButton *checkboxButton = (UIButton *)[cell viewWithTag:2]; //checkbox button
     
     // Reset textfield/button values in case of cell reuse
     // this way old cell data is deleted

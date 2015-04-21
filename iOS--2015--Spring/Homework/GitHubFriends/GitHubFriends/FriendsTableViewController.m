@@ -27,6 +27,9 @@
     
     [super viewDidLoad];
     friends = [[NSMutableArray alloc]init];
+   
+    
+    // register class for custom cell only required if storyboard not used.
     
     [self.tableView registerClass:[FriendsCell class]
            forCellReuseIdentifier:@"FriendsCell"];
@@ -60,8 +63,8 @@
     
     // Configure the cell...
    
-   // get from our array our assoiated object that is paired with this cell
-   // dictionary is our stores
+   // get from our array our associated object that is paired with this cell
+   // use a dictionary for our stores
     
     NSDictionary *friendInfo = friends[indexPath.row];
     
@@ -94,7 +97,7 @@
     FriendDetailViewController * friendsDetailVC = [[FriendDetailViewController alloc]init];
     
    
-    // pass a pointer to the friends array to the new view
+    // pass a pointer to the friend dictionary (defined in FriendDetailViewController) to the new view
     
     friendsDetailVC.friendInfo = aFriend;
    

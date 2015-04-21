@@ -125,18 +125,27 @@
         [receivedData appendData:data];
     }
 }
+
 // task finished, or finished with error, if error, point to NSError object, or no error,
 // point to nil
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
 {
     if (!error)
-    {  // for developer testing
+    {
+        // session finished!
+        // convert serialized data in receivedData to a foundation object Dictionary, userInfo, and transfer to to
+        // array, friends.
+        // note: for this log for developer testing only
+        
         NSLog(@"Download Successful");
         NSDictionary *userInfo = [ NSJSONSerialization
                                   JSONObjectWithData:receivedData options:0 error:nil];
               
-              [self.friends addObject:userInfo];
-              [self cancel];
+        [self.friends addObject:userInfo];  // friends is a public mutable array defined in header file
+       
+       // drop the view from the stack
+        
+        [self cancel];
     }
 }
 
@@ -152,14 +161,19 @@
 
 - (void) save
 {
-    // Use user name in http url to fetch json data from github.
+   //Git User Button has been pressed.
+    
+    // append the user name to the http url to fetch json data from github.
     
     NSString *username = usernameTextField.text;
     NSString *urlString = [NSString stringWithFormat:@"https://api.github.com/users/%@", username];
    
     NSURL *url = [NSURL URLWithString:urlString];
-   
-    /*  synchronous web tansfer
+  
+    
+    
+    /* download data via synchronous web tansfer
+     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     // api will return json data in "blob of bits"
@@ -178,7 +192,10 @@
     [self.friends addObject:userInfo];
   */
 
-     // asynchronous transfer.. via iOS 7 enhancmentsa
+    // or download data via asynchronous transfer.. via iOS 7 enhancmentsa
+    // but do not save transfer data just yet. We must wait till session is complete.
+    // see
+    // URLSession:session :)task didCompleteWithError:for handling the data store.
     
     NSURLSessionConfiguration *configuration =
     [NSURLSessionConfiguration defaultSessionConfiguration];

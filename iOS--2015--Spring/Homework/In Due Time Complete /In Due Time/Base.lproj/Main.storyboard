@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V8d-jJ-qYd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V8d-jJ-qYd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Todo List Table View Controller-->
@@ -14,23 +14,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TodoItemCell" id="imU-l0-Fbu" customClass="TodoTableViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="imU-l0-Fbu" id="iDr-xX-MC8">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-E5-LuM">
-                                            <rect key="frame" x="15" y="10" width="48" height="40"/>
-                                            <state key="normal" title="!Done">
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-E5-LuM">
+                                            <rect key="frame" x="15" y="0.0" width="40" height="60"/>
+                                            <state key="normal" image="Image-1">
                                                 <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" title="Done"/>
+                                            <state key="selected" image="Image"/>
                                             <connections>
                                                 <action selector="checkmarkTapped:" destination="jiM-9Y-mHW" eventType="touchUpInside" id="THp-qf-Bdk"/>
                                             </connections>
                                         </button>
-                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter todo here" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="fK4-Rt-9jn">
-                                            <rect key="frame" x="71" y="11" width="519" height="40"/>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter todo here" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="fK4-Rt-9jn">
+                                            <rect key="frame" x="70" y="0.0" width="515" height="60"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                             <connections>
@@ -39,23 +40,14 @@
                                         </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="centerY" secondItem="R7g-E5-LuM" secondAttribute="centerY" id="1gx-oL-NYU"/>
-                                        <constraint firstAttribute="centerY" secondItem="R7g-E5-LuM" secondAttribute="centerY" id="99h-MB-k2e"/>
-                                        <constraint firstAttribute="trailing" secondItem="fK4-Rt-9jn" secondAttribute="trailing" constant="10" id="cwu-b9-0Qz"/>
-                                        <constraint firstItem="R7g-E5-LuM" firstAttribute="leading" secondItem="iDr-xX-MC8" secondAttribute="leading" constant="15" id="dQu-Rq-9DO"/>
-                                        <constraint firstItem="R7g-E5-LuM" firstAttribute="leading" secondItem="fK4-Rt-9jn" secondAttribute="trailing" constant="8" id="jvV-ng-Uqg"/>
-                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="height" secondItem="R7g-E5-LuM" secondAttribute="height" id="kUJ-vw-ZVN"/>
-                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="leading" secondItem="R7g-E5-LuM" secondAttribute="trailing" constant="8" id="l1E-s2-r00"/>
-                                        <constraint firstAttribute="trailing" secondItem="R7g-E5-LuM" secondAttribute="trailing" constant="8" id="mDR-w0-pvu"/>
-                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="leading" secondItem="iDr-xX-MC8" secondAttribute="leading" constant="15" id="ute-lc-WtW"/>
+                                        <constraint firstItem="R7g-E5-LuM" firstAttribute="top" secondItem="iDr-xX-MC8" secondAttribute="top" id="8UP-32-Efj"/>
+                                        <constraint firstAttribute="centerY" secondItem="R7g-E5-LuM" secondAttribute="centerY" id="Es9-Gi-0sr"/>
+                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="centerY" secondItem="R7g-E5-LuM" secondAttribute="centerY" id="if8-Mu-Y9K"/>
+                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="top" secondItem="iDr-xX-MC8" secondAttribute="top" id="kln-Dv-8Bu"/>
+                                        <constraint firstItem="fK4-Rt-9jn" firstAttribute="leading" secondItem="R7g-E5-LuM" secondAttribute="trailing" constant="15" id="oet-nx-Mnt"/>
+                                        <constraint firstAttribute="trailing" secondItem="fK4-Rt-9jn" secondAttribute="trailing" constant="15" id="otg-5W-ihv"/>
+                                        <constraint firstItem="R7g-E5-LuM" firstAttribute="leading" secondItem="iDr-xX-MC8" secondAttribute="leading" constant="15" id="vfI-Uv-uhf"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="jvV-ng-Uqg"/>
-                                            <exclude reference="mDR-w0-pvu"/>
-                                            <exclude reference="ute-lc-WtW"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="checkBoxButton" destination="R7g-E5-LuM" id="4pP-sy-HSh"/>
@@ -93,4 +85,8 @@
             <point key="canvasLocation" x="657" y="280"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="40" height="40"/>
+        <image name="Image-1" width="40" height="40"/>
+    </resources>
 </document>

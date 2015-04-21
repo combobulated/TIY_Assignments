@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3806B8A11AE1A36F008451FE /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3806B8A21AE1A36F008451FE /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				3806B8A51AE1A38D008451FE /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3806B8781AE19677008451FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8771AE19677008451FE /* main.m */; };
+		3806B87B1AE19677008451FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B87A1AE19677008451FE /* AppDelegate.m */; };
+		3806B8841AE19678008451FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3806B8821AE19678008451FE /* Main.storyboard */; };
+		3806B8861AE19678008451FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3806B8851AE19678008451FE /* Images.xcassets */; };
+		3806B8891AE19678008451FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3806B8871AE19678008451FE /* LaunchScreen.xib */; };
+		3806B8951AE19678008451FE /* LoopAmericaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8941AE19678008451FE /* LoopAmericaTests.m */; };
+		3806B8A01AE19978008451FE /* LoopAmericaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3806B89E1AE19978008451FE /* LoopAmericaModel.xcdatamodeld */; };
+		3806B8A81AE1A496008451FE /* _Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8A71AE1A496008451FE /* _Venue.m */; };
+		3806B8AB1AE1A4B1008451FE /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8AA1AE1A4B1008451FE /* Venue.m */; };
+		3806B8B01AE1A5A1008451FE /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8AF1AE1A5A1008451FE /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3806B8B51AE35415008451FE /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8B41AE35415008451FE /* InfoViewController.m */; };
+		3806B8B81AE35462008451FE /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8B71AE35462008451FE /* VenueTableViewController.m */; };
+		3806B8BB1AE362FE008451FE /* VenueNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B8BA1AE362FE008451FE /* VenueNameTableViewCell.m */; };
+		3806B9281AE4B724008451FE /* JMDLocationServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B9271AE4B724008451FE /* JMDLocationServices.m */; };
+		3806B92B1AE4B827008451FE /* CurrentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806B92A1AE4B827008451FE /* CurrentLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3806B88F1AE19678008451FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3806B86A1AE19677008451FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3806B8711AE19677008451FE;
+			remoteInfo = LoopAmerica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3806B8721AE19677008451FE /* LoopAmerica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopAmerica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3806B8761AE19677008451FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3806B8771AE19677008451FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3806B8791AE19677008451FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3806B87A1AE19677008451FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3806B8831AE19678008451FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3806B8851AE19678008451FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3806B8881AE19678008451FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3806B88E1AE19678008451FE /* LoopAmericaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopAmericaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3806B8931AE19678008451FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3806B8941AE19678008451FE /* LoopAmericaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopAmericaTests.m; sourceTree = "<group>"; };
+		3806B89F1AE19978008451FE /* LoopAmericaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoopAmericaModel.xcdatamodel; sourceTree = "<group>"; };
+		3806B8A61AE1A496008451FE /* _Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Venue.h; path = LoopAmerica/MOGenerated/_Venue.h; sourceTree = "<group>"; };
+		3806B8A71AE1A496008451FE /* _Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Venue.m; path = LoopAmerica/MOGenerated/_Venue.m; sourceTree = "<group>"; };
+		3806B8A91AE1A4B1008451FE /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venue.h; path = LoopAmerica/Classes/Venue.h; sourceTree = "<group>"; };
+		3806B8AA1AE1A4B1008451FE /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = LoopAmerica/Classes/Venue.m; sourceTree = "<group>"; };
+		3806B8AE1AE1A5A0008451FE /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = ../../CoreList/CoreList/CoreDataStack.h; sourceTree = "<group>"; };
+		3806B8AF1AE1A5A1008451FE /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = ../../CoreList/CoreList/CoreDataStack.m; sourceTree = "<group>"; };
+		3806B8B31AE35415008451FE /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		3806B8B41AE35415008451FE /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		3806B8B61AE35462008451FE /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
+		3806B8B71AE35462008451FE /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
+		3806B8B91AE362FE008451FE /* VenueNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueNameTableViewCell.h; sourceTree = "<group>"; };
+		3806B8BA1AE362FE008451FE /* VenueNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueNameTableViewCell.m; sourceTree = "<group>"; };
+		3806B9261AE4B724008451FE /* JMDLocationServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMDLocationServices.h; path = "../../Venue Menu/Venue Menu/JMDLocationServices.h"; sourceTree = "<group>"; };
+		3806B9271AE4B724008451FE /* JMDLocationServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMDLocationServices.m; path = "../../Venue Menu/Venue Menu/JMDLocationServices.m"; sourceTree = "<group>"; };
+		3806B9291AE4B827008451FE /* CurrentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentLocation.h; path = "../../Venue Menu/Venue Menu/CurrentLocation.h"; sourceTree = "<group>"; };
+		3806B92A1AE4B827008451FE /* CurrentLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentLocation.m; path = "../../Venue Menu/Venue Menu/CurrentLocation.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3806B86F1AE19677008451FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3806B88B1AE19678008451FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3806B8691AE19677008451FE = {
+			isa = PBXGroup;
+			children = (
+				3806B8AD1AE1A529008451FE /* Model */,
+				3806B8741AE19677008451FE /* LoopAmerica */,
+				3806B8911AE19678008451FE /* LoopAmericaTests */,
+				3806B8731AE19677008451FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3806B8731AE19677008451FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8721AE19677008451FE /* LoopAmerica.app */,
+				3806B88E1AE19678008451FE /* LoopAmericaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3806B8741AE19677008451FE /* LoopAmerica */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8B11AE1A5C0008451FE /* Libraries */,
+				3806B8791AE19677008451FE /* AppDelegate.h */,
+				3806B87A1AE19677008451FE /* AppDelegate.m */,
+				3806B8B21AE1AC40008451FE /* ViewControllers */,
+				3806B8821AE19678008451FE /* Main.storyboard */,
+				3806B8851AE19678008451FE /* Images.xcassets */,
+				3806B8871AE19678008451FE /* LaunchScreen.xib */,
+				3806B8751AE19677008451FE /* Supporting Files */,
+				3806B89E1AE19978008451FE /* LoopAmericaModel.xcdatamodeld */,
+			);
+			path = LoopAmerica;
+			sourceTree = "<group>";
+		};
+		3806B8751AE19677008451FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8761AE19677008451FE /* Info.plist */,
+				3806B8771AE19677008451FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3806B8911AE19678008451FE /* LoopAmericaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8941AE19678008451FE /* LoopAmericaTests.m */,
+				3806B8921AE19678008451FE /* Supporting Files */,
+			);
+			path = LoopAmericaTests;
+			sourceTree = "<group>";
+		};
+		3806B8921AE19678008451FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8931AE19678008451FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3806B8AC1AE1A4EB008451FE /* Mogenerated -DO NOT MODIFY- */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8A61AE1A496008451FE /* _Venue.h */,
+				3806B8A71AE1A496008451FE /* _Venue.m */,
+			);
+			name = "Mogenerated -DO NOT MODIFY-";
+			sourceTree = "<group>";
+		};
+		3806B8AD1AE1A529008451FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8A91AE1A4B1008451FE /* Venue.h */,
+				3806B8AA1AE1A4B1008451FE /* Venue.m */,
+				3806B8AC1AE1A4EB008451FE /* Mogenerated -DO NOT MODIFY- */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3806B8B11AE1A5C0008451FE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3806B9291AE4B827008451FE /* CurrentLocation.h */,
+				3806B92A1AE4B827008451FE /* CurrentLocation.m */,
+				3806B9261AE4B724008451FE /* JMDLocationServices.h */,
+				3806B9271AE4B724008451FE /* JMDLocationServices.m */,
+				3806B8AE1AE1A5A0008451FE /* CoreDataStack.h */,
+				3806B8AF1AE1A5A1008451FE /* CoreDataStack.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3806B8B21AE1AC40008451FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3806B8B31AE35415008451FE /* InfoViewController.h */,
+				3806B8B41AE35415008451FE /* InfoViewController.m */,
+				3806B8B61AE35462008451FE /* VenueTableViewController.h */,
+				3806B8B71AE35462008451FE /* VenueTableViewController.m */,
+				3806B8B91AE362FE008451FE /* VenueNameTableViewCell.h */,
+				3806B8BA1AE362FE008451FE /* VenueNameTableViewCell.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3806B8711AE19677008451FE /* LoopAmerica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3806B8981AE19678008451FE /* Build configuration list for PBXNativeTarget "LoopAmerica" */;
+			buildPhases = (
+				3806B86E1AE19677008451FE /* Sources */,
+				3806B86F1AE19677008451FE /* Frameworks */,
+				3806B8701AE19677008451FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoopAmerica;
+			productName = LoopAmerica;
+			productReference = 3806B8721AE19677008451FE /* LoopAmerica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3806B88D1AE19678008451FE /* LoopAmericaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3806B89B1AE19678008451FE /* Build configuration list for PBXNativeTarget "LoopAmericaTests" */;
+			buildPhases = (
+				3806B88A1AE19678008451FE /* Sources */,
+				3806B88B1AE19678008451FE /* Frameworks */,
+				3806B88C1AE19678008451FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3806B8901AE19678008451FE /* PBXTargetDependency */,
+			);
+			name = LoopAmericaTests;
+			productName = LoopAmericaTests;
+			productReference = 3806B88E1AE19678008451FE /* LoopAmericaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3806B86A1AE19677008451FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = JMD;
+				TargetAttributes = {
+					3806B8711AE19677008451FE = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					3806B88D1AE19678008451FE = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 3806B8711AE19677008451FE;
+					};
+					3806B8A11AE1A36F008451FE = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 3806B86D1AE19677008451FE /* Build configuration list for PBXProject "LoopAmerica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3806B8691AE19677008451FE;
+			productRefGroup = 3806B8731AE19677008451FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3806B8711AE19677008451FE /* LoopAmerica */,
+				3806B88D1AE19678008451FE /* LoopAmericaTests */,
+				3806B8A11AE1A36F008451FE /* mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3806B8701AE19677008451FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3806B8841AE19678008451FE /* Main.storyboard in Resources */,
+				3806B8891AE19678008451FE /* LaunchScreen.xib in Resources */,
+				3806B8861AE19678008451FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3806B88C1AE19678008451FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3806B8A51AE1A38D008451FE /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/LoopAmerica\"\nmogenerator --human-dir Classes --machine-dir MOGenerated --model LoopAmericaModel.xcdatamodeld/LoopAmericaModel.xcdatamodel --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3806B86E1AE19677008451FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3806B87B1AE19677008451FE /* AppDelegate.m in Sources */,
+				3806B8B51AE35415008451FE /* InfoViewController.m in Sources */,
+				3806B8AB1AE1A4B1008451FE /* Venue.m in Sources */,
+				3806B92B1AE4B827008451FE /* CurrentLocation.m in Sources */,
+				3806B8B01AE1A5A1008451FE /* CoreDataStack.m in Sources */,
+				3806B9281AE4B724008451FE /* JMDLocationServices.m in Sources */,
+				3806B8B81AE35462008451FE /* VenueTableViewController.m in Sources */,
+				3806B8781AE19677008451FE /* main.m in Sources */,
+				3806B8BB1AE362FE008451FE /* VenueNameTableViewCell.m in Sources */,
+				3806B8A01AE19978008451FE /* LoopAmericaModel.xcdatamodeld in Sources */,
+				3806B8A81AE1A496008451FE /* _Venue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3806B88A1AE19678008451FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3806B8951AE19678008451FE /* LoopAmericaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3806B8901AE19678008451FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3806B8711AE19677008451FE /* LoopAmerica */;
+			targetProxy = 3806B88F1AE19678008451FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3806B8821AE19678008451FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3806B8831AE19678008451FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3806B8871AE19678008451FE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3806B8881AE19678008451FE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3806B8961AE19678008451FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3806B8971AE19678008451FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3806B8991AE19678008451FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoopAmerica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3806B89A1AE19678008451FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoopAmerica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3806B89C1AE19678008451FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoopAmericaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoopAmerica.app/LoopAmerica";
+			};
+			name = Debug;
+		};
+		3806B89D1AE19678008451FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoopAmericaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoopAmerica.app/LoopAmerica";
+			};
+			name = Release;
+		};
+		3806B8A31AE1A36F008451FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3806B8A41AE1A36F008451FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3806B86D1AE19677008451FE /* Build configuration list for PBXProject "LoopAmerica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3806B8961AE19678008451FE /* Debug */,
+				3806B8971AE19678008451FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3806B8981AE19678008451FE /* Build configuration list for PBXNativeTarget "LoopAmerica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3806B8991AE19678008451FE /* Debug */,
+				3806B89A1AE19678008451FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3806B89B1AE19678008451FE /* Build configuration list for PBXNativeTarget "LoopAmericaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3806B89C1AE19678008451FE /* Debug */,
+				3806B89D1AE19678008451FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3806B8A21AE1A36F008451FE /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3806B8A31AE1A36F008451FE /* Debug */,
+				3806B8A41AE1A36F008451FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3806B89E1AE19978008451FE /* LoopAmericaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3806B89F1AE19978008451FE /* LoopAmericaModel.xcdatamodel */,
+			);
+			currentVersion = 3806B89F1AE19978008451FE /* LoopAmericaModel.xcdatamodel */;
+			path = LoopAmericaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3806B86A1AE19677008451FE /* Project object */;
+}

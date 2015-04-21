@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		388AB2701AE1823A0074D1B1 /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 388AB2711AE1823A0074D1B1 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				3806B8681AE189DC008451FE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		388AB2391AE1558E0074D1B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB2381AE1558E0074D1B1 /* main.m */; };
+		388AB23C1AE1558E0074D1B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB23B1AE1558E0074D1B1 /* AppDelegate.m */; };
+		388AB23F1AE1558E0074D1B1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB23E1AE1558E0074D1B1 /* RootViewController.m */; };
+		388AB2421AE1558E0074D1B1 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB2411AE1558E0074D1B1 /* DataViewController.m */; };
+		388AB2451AE1558E0074D1B1 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB2441AE1558E0074D1B1 /* ModelController.m */; };
+		388AB2481AE1558E0074D1B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388AB2461AE1558E0074D1B1 /* Main.storyboard */; };
+		388AB24A1AE1558E0074D1B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388AB2491AE1558E0074D1B1 /* Images.xcassets */; };
+		388AB24D1AE1558E0074D1B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388AB24B1AE1558E0074D1B1 /* LaunchScreen.xib */; };
+		388AB2591AE1558E0074D1B1 /* Loop_AmericaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB2581AE1558E0074D1B1 /* Loop_AmericaTests.m */; };
+		388AB26E1AE161E80074D1B1 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 388AB26D1AE161E80074D1B1 /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		388AB2531AE1558E0074D1B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 388AB22B1AE1558E0074D1B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 388AB2321AE1558E0074D1B1;
+			remoteInfo = "Loop America";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		388AB2331AE1558E0074D1B1 /* Loop America.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loop America.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		388AB2371AE1558E0074D1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388AB2381AE1558E0074D1B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		388AB23A1AE1558E0074D1B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		388AB23B1AE1558E0074D1B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		388AB23D1AE1558E0074D1B1 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		388AB23E1AE1558E0074D1B1 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		388AB2401AE1558E0074D1B1 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		388AB2411AE1558E0074D1B1 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		388AB2431AE1558E0074D1B1 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		388AB2441AE1558E0074D1B1 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		388AB2471AE1558E0074D1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		388AB2491AE1558E0074D1B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		388AB24C1AE1558E0074D1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		388AB2521AE1558E0074D1B1 /* Loop AmericaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loop AmericaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		388AB2571AE1558E0074D1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388AB2581AE1558E0074D1B1 /* Loop_AmericaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loop_AmericaTests.m; sourceTree = "<group>"; };
+		388AB26C1AE161E80074D1B1 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = ../../CoreList/CoreList/CoreDataStack.h; sourceTree = "<group>"; };
+		388AB26D1AE161E80074D1B1 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = ../../CoreList/CoreList/CoreDataStack.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		388AB2301AE1558E0074D1B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388AB24F1AE1558E0074D1B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		388AB22A1AE1558E0074D1B1 = {
+			isa = PBXGroup;
+			children = (
+				388AB2351AE1558E0074D1B1 /* Loop America */,
+				388AB2551AE1558E0074D1B1 /* Loop AmericaTests */,
+				388AB2341AE1558E0074D1B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		388AB2341AE1558E0074D1B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				388AB2331AE1558E0074D1B1 /* Loop America.app */,
+				388AB2521AE1558E0074D1B1 /* Loop AmericaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		388AB2351AE1558E0074D1B1 /* Loop America */ = {
+			isa = PBXGroup;
+			children = (
+				388AB26F1AE162110074D1B1 /* Libraries */,
+				388AB23A1AE1558E0074D1B1 /* AppDelegate.h */,
+				388AB23B1AE1558E0074D1B1 /* AppDelegate.m */,
+				388AB23D1AE1558E0074D1B1 /* RootViewController.h */,
+				388AB23E1AE1558E0074D1B1 /* RootViewController.m */,
+				388AB2401AE1558E0074D1B1 /* DataViewController.h */,
+				388AB2411AE1558E0074D1B1 /* DataViewController.m */,
+				388AB2431AE1558E0074D1B1 /* ModelController.h */,
+				388AB2441AE1558E0074D1B1 /* ModelController.m */,
+				388AB2461AE1558E0074D1B1 /* Main.storyboard */,
+				388AB2491AE1558E0074D1B1 /* Images.xcassets */,
+				388AB24B1AE1558E0074D1B1 /* LaunchScreen.xib */,
+				388AB2361AE1558E0074D1B1 /* Supporting Files */,
+			);
+			path = "Loop America";
+			sourceTree = "<group>";
+		};
+		388AB2361AE1558E0074D1B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				388AB2371AE1558E0074D1B1 /* Info.plist */,
+				388AB2381AE1558E0074D1B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		388AB2551AE1558E0074D1B1 /* Loop AmericaTests */ = {
+			isa = PBXGroup;
+			children = (
+				388AB2581AE1558E0074D1B1 /* Loop_AmericaTests.m */,
+				388AB2561AE1558E0074D1B1 /* Supporting Files */,
+			);
+			path = "Loop AmericaTests";
+			sourceTree = "<group>";
+		};
+		388AB2561AE1558E0074D1B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				388AB2571AE1558E0074D1B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		388AB26F1AE162110074D1B1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				388AB26C1AE161E80074D1B1 /* CoreDataStack.h */,
+				388AB26D1AE161E80074D1B1 /* CoreDataStack.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		388AB2321AE1558E0074D1B1 /* Loop America */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 388AB25C1AE1558E0074D1B1 /* Build configuration list for PBXNativeTarget "Loop America" */;
+			buildPhases = (
+				388AB22F1AE1558E0074D1B1 /* Sources */,
+				388AB2301AE1558E0074D1B1 /* Frameworks */,
+				388AB2311AE1558E0074D1B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loop America";
+			productName = "Loop America";
+			productReference = 388AB2331AE1558E0074D1B1 /* Loop America.app */;
+			productType = "com.apple.product-type.application";
+		};
+		388AB2511AE1558E0074D1B1 /* Loop AmericaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 388AB25F1AE1558E0074D1B1 /* Build configuration list for PBXNativeTarget "Loop AmericaTests" */;
+			buildPhases = (
+				388AB24E1AE1558E0074D1B1 /* Sources */,
+				388AB24F1AE1558E0074D1B1 /* Frameworks */,
+				388AB2501AE1558E0074D1B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				388AB2541AE1558E0074D1B1 /* PBXTargetDependency */,
+			);
+			name = "Loop AmericaTests";
+			productName = "Loop AmericaTests";
+			productReference = 388AB2521AE1558E0074D1B1 /* Loop AmericaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		388AB22B1AE1558E0074D1B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = JMD;
+				TargetAttributes = {
+					388AB2321AE1558E0074D1B1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					388AB2511AE1558E0074D1B1 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 388AB2321AE1558E0074D1B1;
+					};
+					388AB2701AE1823A0074D1B1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 388AB22E1AE1558E0074D1B1 /* Build configuration list for PBXProject "Loop America" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 388AB22A1AE1558E0074D1B1;
+			productRefGroup = 388AB2341AE1558E0074D1B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				388AB2321AE1558E0074D1B1 /* Loop America */,
+				388AB2511AE1558E0074D1B1 /* Loop AmericaTests */,
+				388AB2701AE1823A0074D1B1 /* mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		388AB2311AE1558E0074D1B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388AB2481AE1558E0074D1B1 /* Main.storyboard in Resources */,
+				388AB24D1AE1558E0074D1B1 /* LaunchScreen.xib in Resources */,
+				388AB24A1AE1558E0074D1B1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388AB2501AE1558E0074D1B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3806B8681AE189DC008451FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/Loop\\ America\"\nmogenerator --human-dir Classes --machine-dir MOGenerated --model Loop\\ AmericaModel.xcdatamodeld/Loop\\ AmericaModel.xcdatamodel --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		388AB22F1AE1558E0074D1B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388AB2421AE1558E0074D1B1 /* DataViewController.m in Sources */,
+				388AB23C1AE1558E0074D1B1 /* AppDelegate.m in Sources */,
+				388AB2451AE1558E0074D1B1 /* ModelController.m in Sources */,
+				388AB2391AE1558E0074D1B1 /* main.m in Sources */,
+				388AB23F1AE1558E0074D1B1 /* RootViewController.m in Sources */,
+				388AB26E1AE161E80074D1B1 /* CoreDataStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388AB24E1AE1558E0074D1B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388AB2591AE1558E0074D1B1 /* Loop_AmericaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		388AB2541AE1558E0074D1B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 388AB2321AE1558E0074D1B1 /* Loop America */;
+			targetProxy = 388AB2531AE1558E0074D1B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		388AB2461AE1558E0074D1B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				388AB2471AE1558E0074D1B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		388AB24B1AE1558E0074D1B1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				388AB24C1AE1558E0074D1B1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		388AB25A1AE1558E0074D1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		388AB25B1AE1558E0074D1B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		388AB25D1AE1558E0074D1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Loop America/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		388AB25E1AE1558E0074D1B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Loop America/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		388AB2601AE1558E0074D1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Loop AmericaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loop America.app/Loop America";
+			};
+			name = Debug;
+		};
+		388AB2611AE1558E0074D1B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Loop AmericaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loop America.app/Loop America";
+			};
+			name = Release;
+		};
+		388AB2721AE1823A0074D1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		388AB2731AE1823A0074D1B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		388AB22E1AE1558E0074D1B1 /* Build configuration list for PBXProject "Loop America" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388AB25A1AE1558E0074D1B1 /* Debug */,
+				388AB25B1AE1558E0074D1B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388AB25C1AE1558E0074D1B1 /* Build configuration list for PBXNativeTarget "Loop America" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388AB25D1AE1558E0074D1B1 /* Debug */,
+				388AB25E1AE1558E0074D1B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388AB25F1AE1558E0074D1B1 /* Build configuration list for PBXNativeTarget "Loop AmericaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388AB2601AE1558E0074D1B1 /* Debug */,
+				388AB2611AE1558E0074D1B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388AB2711AE1823A0074D1B1 /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388AB2721AE1823A0074D1B1 /* Debug */,
+				388AB2731AE1823A0074D1B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 388AB22B1AE1558E0074D1B1 /* Project object */;
+}
