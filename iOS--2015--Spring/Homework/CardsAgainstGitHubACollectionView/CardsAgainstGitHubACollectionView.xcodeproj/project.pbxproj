@@ -15,7 +15,7 @@
 		38EB64541AE5C89D00007F68 /* CardsAgainstGitHubACollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB64531AE5C89D00007F68 /* CardsAgainstGitHubACollectionViewTests.m */; };
 		38EB645F1AE5CE6E00007F68 /* FriendsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB645E1AE5CE6E00007F68 /* FriendsCollectionViewController.m */; };
 		38EB64621AE5CF2900007F68 /* NewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB64611AE5CF2900007F68 /* NewFriendViewController.m */; };
-		38EB64651AE5D47100007F68 /* FriendsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB64641AE5D47100007F68 /* FriendsDetailViewController.m */; };
+		38EB64651AE5D47100007F68 /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB64641AE5D47100007F68 /* FriendDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		38EB645E1AE5CE6E00007F68 /* FriendsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsCollectionViewController.m; sourceTree = "<group>"; };
 		38EB64601AE5CF2900007F68 /* NewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendViewController.h; sourceTree = "<group>"; };
 		38EB64611AE5CF2900007F68 /* NewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendViewController.m; sourceTree = "<group>"; };
-		38EB64631AE5D47100007F68 /* FriendsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsDetailViewController.h; sourceTree = "<group>"; };
-		38EB64641AE5D47100007F68 /* FriendsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsDetailViewController.m; sourceTree = "<group>"; };
+		38EB64631AE5D47100007F68 /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
+		38EB64641AE5D47100007F68 /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 				38EB645E1AE5CE6E00007F68 /* FriendsCollectionViewController.m */,
 				38EB64601AE5CF2900007F68 /* NewFriendViewController.h */,
 				38EB64611AE5CF2900007F68 /* NewFriendViewController.m */,
-				38EB64631AE5D47100007F68 /* FriendsDetailViewController.h */,
-				38EB64641AE5D47100007F68 /* FriendsDetailViewController.m */,
+				38EB64631AE5D47100007F68 /* FriendDetailViewController.h */,
+				38EB64641AE5D47100007F68 /* FriendDetailViewController.m */,
 			);
 			path = CardsAgainstGitHubACollectionView;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 				38EB64621AE5CF2900007F68 /* NewFriendViewController.m in Sources */,
 				38EB643D1AE5C89D00007F68 /* AppDelegate.m in Sources */,
 				38EB643A1AE5C89D00007F68 /* main.m in Sources */,
-				38EB64651AE5D47100007F68 /* FriendsDetailViewController.m in Sources */,
+				38EB64651AE5D47100007F68 /* FriendDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

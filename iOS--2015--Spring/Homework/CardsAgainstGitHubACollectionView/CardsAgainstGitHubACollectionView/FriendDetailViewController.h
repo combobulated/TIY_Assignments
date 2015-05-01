@@ -1,5 +1,5 @@
 //
-//  FriendsDetailViewController.h
+//  FriendDetailViewController.h
 //  CardsAgainstGitHubACollectionView
 //
 //  Created by Jim on 4/20/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendsDetailViewController : UIViewController
+@interface FriendDetailViewController : UIViewController
+
+@property (nonatomic) NSDictionary *friendInfo;
 
 @end

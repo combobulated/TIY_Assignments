@@ -1,18 +1,18 @@
 //
-//  FriendsDetailViewController.m
+//  FriendDetailViewController.m
 //  CardsAgainstGitHubACollectionView
 //
 //  Created by Jim on 4/20/15.
 //  Copyright (c) 2015 JMD. All rights reserved.
 //
 
-#import "FriendsDetailViewController.h"
+#import "FriendDetailViewController.h"
 
-@interface FriendsDetailViewController ()
+@interface FriendDetailViewController ()
 
 @end
 
-@implementation FriendsDetailViewController
+@implementation FriendDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

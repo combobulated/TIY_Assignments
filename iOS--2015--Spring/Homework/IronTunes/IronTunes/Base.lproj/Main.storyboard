@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jsm-tr-2iS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO8-aE-PA7">
+                                <rect key="frame" x="279" y="184" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hz0-5y-YGV">
+                                <rect key="frame" x="285" y="405" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxi-jZ-dE8">
+                                <rect key="frame" x="241" y="102" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTL-JP-hfw">
+                                <rect key="frame" x="275" y="460" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcP-LD-p9h">
+                                <rect key="frame" x="261" y="153" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uTL-JP-hfw" firstAttribute="top" secondItem="Hz0-5y-YGV" secondAttribute="bottom" constant="25" id="6g5-ma-B5l"/>
+                            <constraint firstItem="Hz0-5y-YGV" firstAttribute="top" secondItem="dO8-aE-PA7" secondAttribute="bottom" constant="200" id="FfJ-hp-itP"/>
+                            <constraint firstAttribute="centerX" secondItem="Kxi-jZ-dE8" secondAttribute="centerX" id="MJr-RC-ejb"/>
+                            <constraint firstItem="dO8-aE-PA7" firstAttribute="top" secondItem="LcP-LD-p9h" secondAttribute="bottom" constant="10" id="XAT-4m-aYy"/>
+                            <constraint firstItem="Kxi-jZ-dE8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="ZCG-rO-GrE"/>
+                            <constraint firstItem="LcP-LD-p9h" firstAttribute="centerX" secondItem="dO8-aE-PA7" secondAttribute="centerX" id="h61-GP-MY4"/>
+                            <constraint firstItem="LcP-LD-p9h" firstAttribute="centerX" secondItem="Kxi-jZ-dE8" secondAttribute="centerX" id="iTS-Hc-4Fl"/>
+                            <constraint firstItem="dO8-aE-PA7" firstAttribute="centerX" secondItem="Hz0-5y-YGV" secondAttribute="centerX" id="qg6-y8-I3V"/>
+                            <constraint firstItem="LcP-LD-p9h" firstAttribute="top" secondItem="Kxi-jZ-dE8" secondAttribute="bottom" constant="30" id="tQy-2b-A0A"/>
+                            <constraint firstItem="Hz0-5y-YGV" firstAttribute="centerX" secondItem="uTL-JP-hfw" secondAttribute="centerX" id="wbg-ge-2lH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="P5F-Eh-sU5"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="dO8-aE-PA7" id="7az-s6-S6G"/>
+                        <outlet property="playPauseButton" destination="Hz0-5y-YGV" id="fcp-q7-cjY"/>
+                        <outlet property="restartButton" destination="uTL-JP-hfw" id="oqj-wR-6Nk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jtH-vS-eGB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jsm-tr-2iS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tXe-Ka-wCq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ENb-rZ-CTo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ott-Ue-P03" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="367"/>
+        </scene>
+    </scenes>
+</document>
