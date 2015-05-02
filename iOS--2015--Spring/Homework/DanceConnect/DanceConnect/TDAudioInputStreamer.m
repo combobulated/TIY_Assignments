@@ -69,12 +69,20 @@
 
 - (void)run
 {
-    @autoreleasepool {
-        [self.audioStream open];
-
+    @autoreleasepool
+    {
+       [self.audioStream open];
+        
+        
         self.isPlaying = YES;
-
-        while (self.isPlaying && [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]) ;
+        
+//      Deadlocking Fix - Add Thread Handling
+//      while (self.isPlaying && [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]) ;
+       while ((![[NSThread currentThread] isCancelled]) && self.isPlaying && [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]) {}
+        
+        self.isPlaying = NO;
+       [self.audioQueue stop];
+        
     }
 }
 
@@ -201,13 +209,18 @@
 
 - (void)stop
 {
-    [self performSelector:@selector(stopThread) onThread:self.audioStreamerThread withObject:nil waitUntilDone:YES];
+    
+//      Deadlocking Fix - Add Thread Handling
+/*    [self performSelector:@selector(stopThread) onThread:self.audioStreamerThread withObject:nil waitUntilDone:YES];
 }
 
 - (void)stopThread
 {
     self.isPlaying = NO;
-    [self.audioQueue stop];
+
+[self.audioQueue stop];
+ */
+    [self.audioStreamerThread cancel];
 }
 
 @end
