@@ -78,13 +78,13 @@ void TDAudioFileStreamPacketsListener(void *inClientData, UInt32 inNumberBytes, 
 - (void)didReceivePackets:(const void *)packets packetDescriptions:(AudioStreamPacketDescription *)packetDescriptions numberOfPackets:(UInt32)numberOfPackets numberOfBytes:(UInt32)numberOfBytes
 {
     if (packetDescriptions) {
-        for (NSUInteger i = 0; i < numberOfPackets; i++) {
-            SInt64 packetOffset = packetDescriptions[i].mStartOffset;
-            UInt32 packetSize = packetDescriptions[i].mDataByteSize;
-
-            [self.delegate audioFileStream:self didReceiveData:(const void *)(packets + packetOffset) length:packetSize packetDescription:(AudioStreamPacketDescription)packetDescriptions[i]];
+        for (NSUInteger i = 0; i < numberOfPackets; i++)
+        {
+            [self.delegate audioFileStream:self didReceiveData:(const void *)(packets) packetDescription:(AudioStreamPacketDescription)packetDescriptions[i]];
         }
-    } else {
+        
+    } else
+    {
         [self.delegate audioFileStream:self didReceiveData:(const void *)packets length:numberOfBytes];
     }
 }
